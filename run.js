@@ -1,3 +1,5 @@
 const App = require('./app')
 
-App.execute(587);
+let arg = process.argv.slice(2);
+
+App.execute(parseInt(arg[0]));
